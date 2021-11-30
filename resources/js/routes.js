@@ -24,12 +24,12 @@ export const routes = [
         component: Mostrar
     },
     {
-        name: 'crearBlogs',
+        name: 'crearBlog',
         path: '/crear',
         component: Crear
     },
     {
-        name: 'editarBlogs',
+        name: 'editarBlog',
         path: '/editar/:id',
         component: Editar
     }
