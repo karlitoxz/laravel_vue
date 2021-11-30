@@ -52,10 +52,10 @@ export default {
             })
         },
         borrarBlog(id){
-            if(comfirm("¿Confirma eliminar el registro?")){
+            if(confirm("¿Confirma eliminar el registro?")){
                 this.axios.delete(`/api/blog/${id}`)
                 .then(response=>{
-                    this.blogs = mostarBlogs()
+                    this.mostrarBlogs()
                 })
                 .catch(error=>{
                     console.log(error) 
